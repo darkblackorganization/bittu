@@ -3,34 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fast.css">
-    <title>Document</title>
-    
+    <title>Hacking Courses & Tools</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <!-- upper class  -->
-   <div class="main">
-    <img src="" alt="image">
-    <br>
-    <h1>BITTU SHARMA</h1>
-    <hr>
-    </div>
-    <div class="main2">
-    <!-- text button  in one line-->
-    <a href=""><img src="" alt="about me"></a>
-    <a href=""><img src="" alt="hacking course"></a>
-    <a href=""><img src="" alt="hardware tools"></a>
-    <a href=""><img src="" alt="app store"></a>
-   </div> 
-   <!-- slide img  -->
-   <div class="app">
-    <img src="" alt="" >
-    <a href="lol"><p>this is appp</p></a>
-    <img src="" alt="">
-   </div>
-   <div class="main3">
+    <header>
+        <h1>Hacking Courses & Tools</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#hardware">Hardware Tools</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
 
-   </div>
+    <main>
+        <section id="home">
+            <h2>Welcome to Hacking Courses & Tools</h2>
+            <p>Explore our range of courses, applications, and hardware tools.</p>
+        </section>
 
+        <section id="courses">
+            <h2>Courses</h2>
+            <div class="product" id="course1">
+                <h3>Ethical Hacking 101</h3>
+                <p>Learn the basics of ethical hacking.</p>
+                <button onclick="addToCart('Ethical Hacking 101', 'course1', 49.99)">Add to Cart</button>
+            </div>
+            <div class="product" id="course2">
+                <h3>Advanced Penetration Testing</h3>
+                <p>Master advanced techniques in penetration testing.</p>
+                <button onclick="addToCart('Advanced Penetration Testing', 'course2', 79.99)">Add to Cart</button>
+            </div>
+        </section>
+    		
+  
+        <section id="applications">
+            <h2>Applications</h2>
+            <div class="product" id="app1">
+                <h3>Network Scanner</h3>
+                <p>Scan your network for vulnerabilities.</p>
+                <button onclick="addToCart('Network Scanner', 'app1', 29.99)">Add to Cart</button>
+            </div>
+            <div class="product" id="app2">
+                <h3>Password Cracker</h3>
+                <p>Crack passwords with high efficiency.</p>
+                <button onclick="addToCart('Password Cracker', 'app2', 39.99)">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="hardware">
+            <h2>Hardware Tools</h2>
+            <div class="product" id="hardware1">
+                <h3>Penetration Testing Kit</h3>
+                <p>Comprehensive toolkit for penetration testing.</p>
+                <button onclick="addToCart('Penetration Testing Kit', 'hardware1', 149.99)">Add to Cart</button>
+            </div>
+            <div class="product" id="hardware2">
+                <h3>WiFi Pineapple</h3>
+                <p>Powerful device for network analysis.</p>
+                <button onclick="addToCart('WiFi Pineapple', 'hardware2', 199.99)">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="contact">
+        		 <h4>Contact Us</h4>
+        		<div class="contact">
+           
+            <form id="contact-form">
+                 <label for="name" >name:</label>
+                <input type="text" id="name" name="name" required>
+            		<br>
+            		 <label for="email">Email:</label>
+                <input type="email" id="email" name="email" hidden="hh"required>
+            		<br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            		<br>
+                <button type="submit">Submit</button>
+            </form>
+        		</div>
+        </section>
+    		     
+    		   <section id="cart">
+             <h2>Cart</h2>
+             <ul id="cart-items"></ul>
+             <p>Total: <span id="cart-total">$0.00</span></p>
+             <button onclick="checkout()">Checkout with PayPal</button>
+        </section>
+
+
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hacking Courses & Tools</p>
+    </footer>
+
+    <script src="java.js"></script>
+     
 </body>
 </html>
